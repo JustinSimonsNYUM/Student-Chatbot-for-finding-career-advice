@@ -35,7 +35,7 @@
       <template>
           Many career options involve coding. What is your second most desirable feature in a job?
           <button>
-              <text>I enjoy coding, but I also want to work on other parts of projects as well.</text>
+              <text>I enjoy coding, but I also want to work with a team on other parts of projects as well.</text>
               <postback>softwaredeveloper</postback>
           </button>
           <button>
