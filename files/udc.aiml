@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>hi</pattern>
+    <template>
+        Hello, do you need help deciding on a career path?
+        <reply>
+            <text>Yes!</text>
+            <postback>yesreply</postback>
+        </reply>
+        <reply>
+            <text>No thank you.</text>
+            <postback>noreply</postback>
+        </reply>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>yesreply</pattern>
+      <template>
+          Awesome! let's get started. What is your primary interest in a job?
+          <reply>
+              <text>I love to code!</text>
+              <postback>codereply</postback>
+          </reply>
+          <reply>
+              <text>I love dealing with data!</text>
+              <postback>datareply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>codereply</pattern>
+      <template>
+          Many career options involve coding. What is your second most desirable feature in a job?
+          <button>
+              <text>I enjoy coding, but I also want to work on other parts of projects as well.</text>
+              <postback>softwaredeveloper</postback>
+          </button>
+          <button>
+              <text>I only want to code. I want to work mainly with software and computer applications</text>
+              <postback>computerprogrammer</postback>
+          </button>
+          <button>
+              <text>I only want to code. I mainly want to work with websites and web applications.</text>
+              <postback>webdeveloper</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>datareply</pattern>
+      <template>
+            Many career options involve working with data. What is your second most desirable feature in a job?
+            <button>
+                <text>I want to work with current data sets to answer business questions.</text>
+                <postback>infoanalyst</postback>
+            </button>
+            <button>
+                <text>I want to develop new ways to capture and analyze data.</text>
+                <postback>datascientist</postback>
+            </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>softwaredeveloper</pattern>
+      <template>
+          Congratulations! Based on your responses, it looks like you would enjoy being a Software Developer!
+          <br/><br/>
+          Would you like to try again?
+          <reply>
+              <text>Yes!</text>
+              <postback>yesreply</postback>
+          </reply>
+          <reply>
+              <text>No thank you.</text>
+              <postback>noreply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>computerprogrammer</pattern>
+      <template>
+          Congratulations! Based on your responses, it looks like you would enjoy being a Computer Programmer!
+          <br/><br/>
+          Would you like to try again?
+          <reply>
+              <text>Yes!</text>
+              <postback>yesreply</postback>
+          </reply>
+          <reply>
+              <text>No thank you.</text>
+              <postback>noreply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>webdeveloper</pattern>
+      <template>
+          Congratulations! Based on your responses, it looks like you would enjoy being a Web Developer!
+          <br/><br/>
+          Would you like to try again?
+          <reply>
+              <text>Yes!</text>
+              <postback>yesreply</postback>
+          </reply>
+          <reply>
+              <text>No thank you.</text>
+              <postback>noreply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>infoanalyst</pattern>
+      <template>
+          Congratulations! Based on your responses, it looks like you would enjoy being an Information Analyst!
+          <br/><br/>
+          Would you like to try again?
+          <reply>
+              <text>Yes!</text>
+              <postback>yesreply</postback>
+          </reply>
+          <reply>
+              <text>No thank you.</text>
+              <postback>noreply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>datascientist</pattern>
+      <template>
+          Congratulations! Based on your responses, it looks like you would enjoy being a Data Scientist!
+          <br/><br/>
+          Would you like to try again?
+          <reply>
+              <text>Yes!</text>
+              <postback>yesreply</postback>
+          </reply>
+          <reply>
+              <text>No thank you.</text>
+              <postback>noreply</postback>
+          </reply>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>noreply</pattern>
+      <template>Ok, feel free to exit the chat. Have a great day!</template>
+  </category>
+  
+  <category>
+      <pattern>*</pattern>
+      <template>Please type hi to get started</template>
+  </category>
+
+</aiml>
